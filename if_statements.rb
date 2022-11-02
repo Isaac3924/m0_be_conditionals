@@ -42,9 +42,25 @@ end
 # to make sure both conditions can be achieved.
 
 num_quarters = 0
+if num_quarters >= 2
+  puts "I have enough money for a gumball"
+else
+  puts "I don't have enough money for a gumball"
+end
 
-puts "I have enough money for a gumball"
-puts "I don't have enough money for a gumball"
+num_quarters = 2
+if num_quarters >= 2
+  puts "I have enough money for a gumball"
+else
+  puts "I don't have enough money for a gumball"
+end
+
+num_quarters = 5
+if num_quarters >= 2
+  puts "I have enough money for a gumball"
+else
+  puts "I don't have enough money for a gumball"
+end
 
 
 #####################
@@ -63,3 +79,36 @@ puts "I don't have enough money for a gumball"
 
 cups_of_flour = 1
 has_sauce = true
+
+if cups_of_flour >= 2 && has_sauce
+  p "I can make pizza"
+else
+  p "I cannot make pizza"
+end
+
+cups_of_flour = 2
+has_sauce = true
+
+if cups_of_flour >= 2 && has_sauce
+  p "I can make pizza"
+else
+  p "I cannot make pizza"
+end
+
+cups_of_flour = 2
+has_sauce = false
+
+if cups_of_flour >= 2 && has_sauce
+  p "I can make pizza"
+else
+  p "I cannot make pizza"
+end
+
+cups_of_flour = 0
+has_sauce = false
+
+if cups_of_flour >= 2 && has_sauce
+  p "I can make pizza"
+else
+  p "I cannot make pizza"
+end
